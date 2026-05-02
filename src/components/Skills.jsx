@@ -26,13 +26,13 @@ export default function Skills() {
           fontFamily: 'var(--font-mono)', fontSize: '0.75rem', color: 'var(--accent)',
           letterSpacing: '0.15em', textTransform: 'uppercase',
         }}>03 — skills</span>
-        <h2 className="text-gradient" style={{
+        <h2 style={{
           fontFamily: 'var(--font-head)', fontWeight: 800,
           fontSize: 'clamp(2rem, 5vw, 3.5rem)', letterSpacing: '-0.03em',
           lineHeight: 1.1, marginTop: '1rem',
         }}>
           Technologies I<br />
-          <span className="text-gradient-accent">mastered</span>
+          <span style={{ color: 'var(--accent)' }}>mastered</span>
         </h2>
       </div>
 
@@ -64,8 +64,9 @@ export default function Skills() {
         display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '2rem',
       }}>
         {skillGroups.map(group => (
-          <div key={group.category} className="glass-card" style={{
-            padding: '2rem',
+          <div key={group.category} style={{
+            border: '1px solid var(--border)', borderRadius: '12px',
+            padding: '2rem', background: 'var(--surface)',
           }}>
             <h3 style={{
               fontFamily: 'var(--font-mono)', fontSize: '0.75rem',

@@ -35,13 +35,13 @@ export default function Projects() {
           fontFamily: 'var(--font-mono)', fontSize: '0.75rem', color: 'var(--accent)',
           letterSpacing: '0.15em', textTransform: 'uppercase',
         }}>02 — projects</span>
-        <h2 className="text-gradient" style={{
+        <h2 style={{
           fontFamily: 'var(--font-head)', fontWeight: 800,
           fontSize: 'clamp(2rem, 5vw, 3.5rem)', letterSpacing: '-0.03em',
           lineHeight: 1.1, marginTop: '1rem',
         }}>
           Some things I've<br />
-          <span className="text-gradient-accent">built</span>
+          <span style={{ color: 'var(--accent)' }}>built</span>
         </h2>
       </div>
 
@@ -56,11 +56,17 @@ export default function Projects() {
 
 function ProjectCard({ project: p }) {
   return (
-    <div className="glass-card" style={{
-      padding: '2.5rem',
+    <div style={{
+      border: '1px solid var(--border)', borderRadius: '12px',
+      padding: '2.5rem', background: 'var(--surface)',
       display: 'grid', gridTemplateColumns: 'auto 1fr auto',
-      gap: '2rem', alignItems: 'start', cursor: 'default',
-    }}>
+      gap: '2rem', alignItems: 'start',
+      transition: 'border-color 0.2s, transform 0.2s',
+      cursor: 'default',
+    }}
+    onMouseEnter={e => { e.currentTarget.style.borderColor = 'var(--accent)'; e.currentTarget.style.transform = 'translateX(8px)' }}
+    onMouseLeave={e => { e.currentTarget.style.borderColor = 'var(--border)'; e.currentTarget.style.transform = '' }}
+    >
       {/* Number */}
       <span style={{
         fontFamily: 'var(--font-mono)', fontSize: '0.75rem',

@@ -9,8 +9,9 @@ const socials = [
 export default function Contact() {
   return (
     <section id="contact" style={{ padding: '4rem 2rem', maxWidth: '1100px', margin: '0 auto' }}>
-      <div className="glass-card" style={{
-        padding: 'clamp(3rem, 8vw, 6rem)',
+      <div style={{
+        border: '1px solid var(--border)', borderRadius: '16px',
+        padding: 'clamp(3rem, 8vw, 6rem)', background: 'var(--surface)',
         textAlign: 'center', position: 'relative', overflow: 'hidden',
       }}>
         {/* bg accent */}
@@ -26,13 +27,13 @@ export default function Contact() {
           letterSpacing: '0.15em', textTransform: 'uppercase',
         }}>04 — contact</span>
 
-        <h2 className="text-gradient" style={{
+        <h2 style={{
           fontFamily: 'var(--font-head)', fontWeight: 800,
           fontSize: 'clamp(2rem, 6vw, 4rem)', letterSpacing: '-0.04em',
           lineHeight: 1.0, margin: '1.5rem 0 1rem',
         }}>
           Let's build something<br />
-          <span className="text-gradient-accent">awesome</span>
+          <span style={{ color: 'var(--accent)' }}>awesome</span>
         </h2>
 
         <p style={{ color: '#888', maxWidth: '460px', margin: '0 auto 3rem', lineHeight: 1.8 }}>
@@ -40,12 +41,17 @@ export default function Contact() {
           good conversation. My inbox is always open!
         </p>
 
-        <a href="mailto:your@email.com" className="glow-btn" style={{
+        <a href="mailto:your@email.com" style={{
           display: 'inline-block',
-          padding: '1rem 2.5rem', borderRadius: '8px',
+          background: 'var(--accent)', color: '#000',
+          padding: '1rem 2.5rem', borderRadius: '6px',
           fontWeight: 700, textDecoration: 'none', fontSize: '1rem',
           letterSpacing: '0.03em', marginBottom: '3rem',
-        }}>
+          transition: 'transform 0.15s, box-shadow 0.15s',
+        }}
+        onMouseEnter={e => { e.target.style.transform = 'translateY(-3px)'; e.target.style.boxShadow = '0 12px 32px rgba(200,241,53,0.35)' }}
+        onMouseLeave={e => { e.target.style.transform = ''; e.target.style.boxShadow = '' }}
+        >
           Say Hello ✉️
         </a>
 
