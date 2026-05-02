@@ -7,7 +7,7 @@ const stats = [
 
 export default function About() {
   return (
-    <section id="about" style={{ padding: '8rem 2rem', maxWidth: '1100px', margin: '0 auto' }}>
+    <section id="about" style={{ padding: '4rem 2rem', maxWidth: '1100px', margin: '0 auto' }}>
       <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '5rem', alignItems: 'center' }}>
         
         {/* Left: Text */}

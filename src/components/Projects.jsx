@@ -29,7 +29,7 @@ const projects = [
 
 export default function Projects() {
   return (
-    <section id="projects" style={{ padding: '8rem 2rem', maxWidth: '1100px', margin: '0 auto' }}>
+    <section id="projects" style={{ padding: '4rem 2rem', maxWidth: '1100px', margin: '0 auto' }}>
       <div style={{ marginBottom: '4rem' }}>
         <span style={{
           fontFamily: 'var(--font-mono)', fontSize: '0.75rem', color: 'var(--accent)',

@@ -19,7 +19,7 @@ const allSkills = skillGroups.flatMap(g => g.skills)
 
 export default function Skills() {
   return (
-    <section id="skills" style={{ padding: '8rem 0', overflow: 'hidden' }}>
+    <section id="skills" style={{ padding: '4rem 0', overflow: 'hidden' }}>
       {/* Header */}
       <div style={{ padding: '0 2rem', maxWidth: '1100px', margin: '0 auto 4rem' }}>
         <span style={{
@@ -38,9 +38,7 @@ export default function Skills() {
 
       {/* Marquee */}
       <div style={{
-        borderTop: '1px solid var(--border)', borderBottom: '1px solid var(--border)',
         padding: '1rem 0', marginBottom: '4rem', overflow: 'hidden',
-        background: 'var(--surface)',
       }}>
         <div style={{
           display: 'flex', gap: '3rem',

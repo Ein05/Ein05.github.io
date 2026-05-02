@@ -8,7 +8,7 @@ const socials = [
 
 export default function Contact() {
   return (
-    <section id="contact" style={{ padding: '8rem 2rem', maxWidth: '1100px', margin: '0 auto' }}>
+    <section id="contact" style={{ padding: '4rem 2rem', maxWidth: '1100px', margin: '0 auto' }}>
       <div style={{
         border: '1px solid var(--border)', borderRadius: '16px',
         padding: 'clamp(3rem, 8vw, 6rem)', background: 'var(--surface)',
