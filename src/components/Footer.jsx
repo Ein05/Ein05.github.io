@@ -12,7 +12,7 @@ export default function Footer() {
         fontFamily: 'var(--font-mono)', fontSize: '0.75rem',
         color: 'var(--muted)', letterSpacing: '0.05em',
       }}>
-        © {year} YourName — Built with React + Vite
+        © {year} Vu Duc Anh — Built with React + Vite
       </span>
       <span style={{
         fontFamily: 'var(--font-mono)', fontSize: '0.75rem',

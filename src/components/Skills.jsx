@@ -31,8 +31,8 @@ export default function Skills() {
           fontSize: 'clamp(2rem, 5vw, 3.5rem)', letterSpacing: '-0.03em',
           lineHeight: 1.1, marginTop: '1rem',
         }}>
-          Công nghệ tôi<br />
-          <span style={{ color: 'var(--accent)' }}>làm chủ</span>
+          Technologies I<br />
+          <span style={{ color: 'var(--accent)' }}>mastered</span>
         </h2>
       </div>
 

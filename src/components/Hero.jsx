@@ -64,8 +64,8 @@ export default function Hero() {
         lineHeight: 1.0, letterSpacing: '-0.04em',
         margin: '0.5rem 0',
       }}>
-        Your<br />
-        <span style={{ color: 'var(--accent)' }}>Name</span>
+        Vu Duc<br />
+        <span style={{ color: 'var(--accent)' }}>Anh</span>
       </h1>
 
       <div className="fade-up delay-2" style={{
@@ -82,10 +82,9 @@ export default function Hero() {
         maxWidth: '520px', color: '#888', lineHeight: 1.8,
         fontSize: '1rem', marginBottom: '3rem',
       }}>
-        {/* ✏️ Sửa đoạn mô tả này */}
-        Tôi xây dựng những sản phẩm web đẹp và hiệu năng cao.
-        Đam mê với clean code, UX tốt và mọi thứ nằm ở giao thoa giữa
-        thiết kế và kỹ thuật.
+        I build beautiful and high-performance web applications.
+        Passionate about clean code, great UX, and everything that lies at the
+        intersection of design and engineering.
       </p>
 
       <div className="fade-up delay-4" style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
@@ -98,7 +97,7 @@ export default function Hero() {
         onMouseEnter={e => { e.target.style.transform = 'translateY(-2px)'; e.target.style.boxShadow = '0 8px 24px rgba(200,241,53,0.3)' }}
         onMouseLeave={e => { e.target.style.transform = ''; e.target.style.boxShadow = '' }}
         >
-          Xem Projects →
+          View Projects →
         </a>
         <a href="#contact" style={{
           border: '1px solid var(--border)', color: 'var(--text)',
@@ -109,7 +108,7 @@ export default function Hero() {
         onMouseEnter={e => { e.target.style.borderColor = 'var(--accent)'; e.target.style.color = 'var(--accent)' }}
         onMouseLeave={e => { e.target.style.borderColor = 'var(--border)'; e.target.style.color = 'var(--text)' }}
         >
-          Liên hệ
+          Contact Me
         </a>
       </div>
 

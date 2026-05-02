@@ -26,7 +26,7 @@ export default function Navbar() {
       <a href="#" style={{ fontFamily: 'var(--font-head)', fontWeight: 800, fontSize: '1.1rem',
         color: 'var(--text)', textDecoration: 'none', letterSpacing: '-0.02em' }}>
         <span style={{ color: 'var(--accent)' }}>{'<'}</span>
-        YourName
+        Vu Duc Anh
         <span style={{ color: 'var(--accent)' }}>{'/>'}</span>
       </a>
 

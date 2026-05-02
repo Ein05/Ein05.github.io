@@ -3,7 +3,7 @@ const projects = [
   {
     number: '01',
     title: 'E-Commerce Platform',
-    description: 'Nền tảng thương mại điện tử full-stack với tính năng giỏ hàng real-time, thanh toán online và dashboard quản trị.',
+    description: 'A full-stack e-commerce platform with real-time shopping cart, online payment, and an admin dashboard.',
     tags: ['React', 'Node.js', 'MongoDB', 'Stripe'],
     link: 'https://github.com',
     demo: 'https://example.com',
@@ -12,7 +12,7 @@ const projects = [
   {
     number: '02',
     title: 'Task Management App',
-    description: 'Ứng dụng quản lý công việc theo phong cách Kanban board với tính năng drag-and-drop và cộng tác nhóm.',
+    description: 'A Kanban-style task management app featuring drag-and-drop functionality and real-time team collaboration.',
     tags: ['React', 'TypeScript', 'Firebase'],
     link: 'https://github.com',
     demo: 'https://example.com',
@@ -20,7 +20,7 @@ const projects = [
   {
     number: '03',
     title: 'Weather Dashboard',
-    description: 'Dashboard thời tiết với biểu đồ dự báo 7 ngày, bản đồ gió và cảnh báo thời tiết cực đoan.',
+    description: 'A weather dashboard showing 7-day forecasts, wind maps, and extreme weather alerts.',
     tags: ['React', 'D3.js', 'OpenWeather API'],
     link: 'https://github.com',
     demo: null,
@@ -40,8 +40,8 @@ export default function Projects() {
           fontSize: 'clamp(2rem, 5vw, 3.5rem)', letterSpacing: '-0.03em',
           lineHeight: 1.1, marginTop: '1rem',
         }}>
-          Những gì tôi<br />
-          đã <span style={{ color: 'var(--accent)' }}>xây dựng</span>
+          Some things I've<br />
+          <span style={{ color: 'var(--accent)' }}>built</span>
         </h2>
       </div>
 

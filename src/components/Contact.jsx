@@ -32,13 +32,13 @@ export default function Contact() {
           fontSize: 'clamp(2rem, 6vw, 4rem)', letterSpacing: '-0.04em',
           lineHeight: 1.0, margin: '1.5rem 0 1rem',
         }}>
-          Hãy cùng làm<br />
-          điều gì đó <span style={{ color: 'var(--accent)' }}>tuyệt vời</span>
+          Let's build something<br />
+          <span style={{ color: 'var(--accent)' }}>awesome</span>
         </h2>
 
         <p style={{ color: '#888', maxWidth: '460px', margin: '0 auto 3rem', lineHeight: 1.8 }}>
-          Tôi luôn mở cửa cho các cơ hội mới, dự án thú vị, hoặc đơn giản là
-          một cuộc trò chuyện tốt. Hộp thư của tôi luôn mở!
+          I am always open to new opportunities, interesting projects, or simply a
+          good conversation. My inbox is always open!
         </p>
 
         <a href="mailto:your@email.com" style={{
@@ -52,7 +52,7 @@ export default function Contact() {
         onMouseEnter={e => { e.target.style.transform = 'translateY(-3px)'; e.target.style.boxShadow = '0 12px 32px rgba(200,241,53,0.35)' }}
         onMouseLeave={e => { e.target.style.transform = ''; e.target.style.boxShadow = '' }}
         >
-          Gửi email cho tôi ✉️
+          Say Hello ✉️
         </a>
 
         {/* Social links */}

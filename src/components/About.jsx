@@ -1,8 +1,8 @@
 const stats = [
-  { value: '3+',   label: 'Năm kinh nghiệm' },
-  { value: '20+',  label: 'Dự án hoàn thành' },
-  { value: '10+',  label: 'Khách hàng hài lòng' },
-  { value: '∞',    label: 'Cốc cà phê' },
+  { value: '3+',   label: 'Years of Experience' },
+  { value: '20+',  label: 'Projects Completed' },
+  { value: '10+',  label: 'Happy Clients' },
+  { value: '∞',    label: 'Cups of Coffee' },
 ]
 
 export default function About() {
@@ -22,21 +22,20 @@ export default function About() {
             fontSize: 'clamp(2rem, 5vw, 3.5rem)', letterSpacing: '-0.03em',
             lineHeight: 1.1, margin: '1rem 0 1.5rem',
           }}>
-            Tôi làm cho<br />
-            <span style={{ color: 'var(--accent)' }}>ý tưởng</span> thành<br />
-            sản phẩm thật
+            I turn<br />
+            <span style={{ color: 'var(--accent)' }}>ideas</span> into<br />
+            real products
           </h2>
 
-          {/* ✏️ Sửa đoạn bio này */}
           <p style={{ color: '#888', lineHeight: 1.9, marginBottom: '1rem' }}>
-            Xin chào! Tôi là một developer đam mê xây dựng những trải nghiệm
-            web hiện đại và có ý nghĩa. Tôi thích làm việc tại điểm giao thoa
-            giữa thiết kế và kỹ thuật — nơi code tốt gặp UX tốt.
+            Hello! I'm a developer passionate about building modern and meaningful
+            web experiences. I love working at the intersection of design and
+            engineering — where clean code meets great UX.
           </p>
           <p style={{ color: '#888', lineHeight: 1.9 }}>
-            Hiện tại tôi tập trung vào React, TypeScript và xây dựng các hệ thống
-            frontend có thể scale được. Khi không code, tôi thường đọc sách hoặc
-            khám phá những quán cà phê mới ở Hà Nội.
+            Currently, I focus on React, TypeScript, and building scalable
+            frontend systems. When I'm not coding, I'm usually reading books or
+            exploring new coffee shops around the city.
           </p>
 
           <a href="/resume.pdf" target="_blank" style={{
