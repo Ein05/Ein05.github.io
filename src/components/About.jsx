@@ -17,13 +17,13 @@ export default function About() {
             letterSpacing: '0.15em', textTransform: 'uppercase',
           }}>01 — about</span>
 
-          <h2 style={{
+          <h2 className="text-gradient" style={{
             fontFamily: 'var(--font-head)', fontWeight: 800,
             fontSize: 'clamp(2rem, 5vw, 3.5rem)', letterSpacing: '-0.03em',
             lineHeight: 1.1, margin: '1rem 0 1.5rem',
           }}>
             I turn<br />
-            <span style={{ color: 'var(--accent)' }}>ideas</span> into<br />
+            <span className="text-gradient-accent">ideas</span> into<br />
             real products
           </h2>
 
@@ -55,16 +55,9 @@ export default function About() {
         {/* Right: Stats */}
         <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1.5rem' }}>
           {stats.map(s => (
-            <div key={s.label} style={{
-              border: '1px solid var(--border)', borderRadius: '8px',
-              padding: '2rem 1.5rem',
-              background: 'var(--surface)',
-              transition: 'border-color 0.2s, transform 0.2s',
-              cursor: 'default',
-            }}
-            onMouseEnter={e => { e.currentTarget.style.borderColor = 'var(--accent)'; e.currentTarget.style.transform = 'translateY(-4px)' }}
-            onMouseLeave={e => { e.currentTarget.style.borderColor = 'var(--border)'; e.currentTarget.style.transform = '' }}
-            >
+            <div key={s.label} className="glass-card" style={{
+              padding: '2rem 1.5rem', cursor: 'default',
+            }}>
               <div style={{
                 fontFamily: 'var(--font-head)', fontWeight: 800,
                 fontSize: '2.5rem', color: 'var(--accent)',

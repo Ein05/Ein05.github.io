@@ -34,20 +34,9 @@ export default function Hero() {
       justifyContent: 'center', padding: '6rem 2rem 4rem',
       maxWidth: '1100px', margin: '0 auto', position: 'relative',
     }}>
-      {/* Grid background */}
-      <div style={{
-        position: 'fixed', inset: 0, zIndex: -1,
-        backgroundImage: 'linear-gradient(var(--border) 1px, transparent 1px), linear-gradient(90deg, var(--border) 1px, transparent 1px)',
-        backgroundSize: '60px 60px', opacity: 0.35,
-      }} />
+      {/* Removed old inline grid as we now have global-grid in App.jsx */}
 
-      {/* Accent blob */}
-      <div style={{
-        position: 'absolute', top: '20%', right: '-5%',
-        width: '400px', height: '400px', borderRadius: '50%',
-        background: 'radial-gradient(circle, rgba(200,241,53,0.08) 0%, transparent 70%)',
-        filter: 'blur(40px)', pointerEvents: 'none',
-      }} />
+      {/* Removed old local blob as we have global orbs */}
 
       <div className="fade-up">
         <span style={{
@@ -58,14 +47,14 @@ export default function Hero() {
         </span>
       </div>
 
-      <h1 className="fade-up delay-1" style={{
+      <h1 className="fade-up delay-1 text-gradient" style={{
         fontFamily: 'var(--font-head)', fontWeight: 800,
         fontSize: 'clamp(3rem, 9vw, 7rem)',
         lineHeight: 1.0, letterSpacing: '-0.04em',
         margin: '0.5rem 0',
       }}>
         Vu Duc<br />
-        <span style={{ color: 'var(--accent)' }}>Anh</span>
+        <span className="text-gradient-accent">Anh</span>
       </h1>
 
       <div className="fade-up delay-2" style={{
@@ -88,26 +77,18 @@ export default function Hero() {
       </p>
 
       <div className="fade-up delay-4" style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
-        <a href="#projects" style={{
-          background: 'var(--accent)', color: '#000',
-          padding: '0.8rem 2rem', borderRadius: '4px',
+        <a href="#projects" className="glow-btn" style={{
+          padding: '0.8rem 2rem', borderRadius: '8px',
           fontWeight: 700, textDecoration: 'none', fontSize: '0.9rem',
-          letterSpacing: '0.05em', transition: 'transform 0.15s, box-shadow 0.15s',
-        }}
-        onMouseEnter={e => { e.target.style.transform = 'translateY(-2px)'; e.target.style.boxShadow = '0 8px 24px rgba(200,241,53,0.3)' }}
-        onMouseLeave={e => { e.target.style.transform = ''; e.target.style.boxShadow = '' }}
-        >
+          letterSpacing: '0.05em',
+        }}>
           View Projects →
         </a>
-        <a href="#contact" style={{
-          border: '1px solid var(--border)', color: 'var(--text)',
-          padding: '0.8rem 2rem', borderRadius: '4px',
+        <a href="#contact" className="glass-card" style={{
+          padding: '0.8rem 2rem', borderRadius: '8px',
           fontWeight: 600, textDecoration: 'none', fontSize: '0.9rem',
-          letterSpacing: '0.05em', transition: 'border-color 0.2s, color 0.2s',
-        }}
-        onMouseEnter={e => { e.target.style.borderColor = 'var(--accent)'; e.target.style.color = 'var(--accent)' }}
-        onMouseLeave={e => { e.target.style.borderColor = 'var(--border)'; e.target.style.color = 'var(--text)' }}
-        >
+          letterSpacing: '0.05em', color: 'var(--text)',
+        }}>
           Contact Me
         </a>
       </div>
