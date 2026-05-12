@@ -32,7 +32,7 @@ export default function Skills() {
           lineHeight: 1.1, marginTop: '1rem',
         }}>
           Technologies I<br />
-          <span style={{ color: 'var(--accent)' }}>mastered</span>
+          <span style={{ color: 'var(--accent)' }}>interested</span>
         </h2>
       </div>
 
