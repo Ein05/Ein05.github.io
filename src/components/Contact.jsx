@@ -1,9 +1,9 @@
 // ✏️ Sửa thông tin liên hệ của bạn
 const socials = [
-  { label: 'GitHub',   href: 'https://github.com/yourusername',      icon: '⌥' },
-  { label: 'LinkedIn', href: 'https://linkedin.com/in/yourusername', icon: '⊞' },
-  { label: 'Twitter',  href: 'https://twitter.com/yourusername',     icon: '◈' },
-  { label: 'Email',    href: 'mailto:your@email.com',                icon: '◎' },
+  { label: 'GitHub',   href: 'https://github.com/Ein05',      icon: '⌥' },
+  { label: 'LinkedIn', href: 'https://www.linkedin.com/in/anh-vu-duc-8189a52b9/', icon: '⊞' },
+  { label: 'Facebook',  href: 'https://www.facebook.com/duc.em.983787/',     icon: '◈' },
+  { label: 'Email',    href: '23010179@st.phenikaa-uni.edu.vn',                icon: '◎' },
 ]
 
 export default function Contact() {
