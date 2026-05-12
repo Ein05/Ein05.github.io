@@ -118,22 +118,23 @@ export default function Hero() {
         <div className="fade-up delay-4" style={{ flex: '1 1 400px', display: 'flex', justifyContent: 'center', zIndex: 1 }}>
           <div style={{
             position: 'relative', width: '100%', maxWidth: '450px',
-            aspectRatio: '1/1', borderRadius: '24px', overflow: 'hidden',
-            boxShadow: '0 20px 40px rgba(0,0,0,0.5)',
-            border: '1px solid var(--border)',
+            aspectRatio: '1/1', display: 'flex', alignItems: 'center', justifyContent: 'center'
           }}>
+            {/* Subtle glow behind the brain */}
             <div style={{
-              position: 'absolute', inset: 0,
-              background: 'linear-gradient(45deg, var(--accent) 0%, transparent 100%)',
-              opacity: 0.1, zIndex: 1, pointerEvents: 'none',
+              position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)',
+              width: '60%', height: '60%', borderRadius: '50%',
+              background: 'radial-gradient(circle, var(--accent) 0%, transparent 60%)',
+              opacity: 0.15, filter: 'blur(40px)', zIndex: -1, pointerEvents: 'none',
             }} />
-            <img src="/hero_ai.png" alt="AI Visualization" style={{
-              width: '100%', height: '100%', objectFit: 'cover',
-              filter: 'brightness(0.9) contrast(1.1)',
-              transition: 'transform 0.5s ease',
+            <img src="/ai_brain.png" alt="AI Brain Visualization" style={{
+              width: '100%', height: '100%', objectFit: 'contain',
+              mixBlendMode: 'screen',
+              filter: 'contrast(1.1) brightness(1.2)',
+              transition: 'transform 0.5s ease, filter 0.3s ease',
             }}
-            onMouseEnter={e => e.target.style.transform = 'scale(1.05)'}
-            onMouseLeave={e => e.target.style.transform = 'scale(1)'}
+            onMouseEnter={e => { e.target.style.transform = 'scale(1.05)'; e.target.style.filter = 'contrast(1.2) brightness(1.3)' }}
+            onMouseLeave={e => { e.target.style.transform = 'scale(1)'; e.target.style.filter = 'contrast(1.1) brightness(1.2)' }}
             />
           </div>
         </div>
