@@ -49,67 +49,94 @@ export default function Hero() {
         filter: 'blur(40px)', pointerEvents: 'none',
       }} />
 
-      <div className="fade-up">
-        <span style={{
-          fontFamily: 'var(--font-mono)', fontSize: '0.8rem', color: 'var(--accent)',
-          letterSpacing: '0.15em', textTransform: 'uppercase',
-        }}>
-          {'// hello world'}
-        </span>
-      </div>
+      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '4rem', flexWrap: 'wrap' }}>
+        <div style={{ flex: '1 1 500px', zIndex: 1 }}>
+          <div className="fade-up">
+            <span style={{
+              fontFamily: 'var(--font-mono)', fontSize: '0.8rem', color: 'var(--accent)',
+              letterSpacing: '0.15em', textTransform: 'uppercase',
+            }}>
+              {'// hello world'}
+            </span>
+          </div>
 
-      <h1 className="fade-up delay-1" style={{
-        fontFamily: 'var(--font-head)', fontWeight: 800,
-        fontSize: 'clamp(3rem, 9vw, 7rem)',
-        lineHeight: 1.0, letterSpacing: '-0.04em',
-        margin: '0.5rem 0',
-      }}>
-        Vu Duc<br />
-        <span style={{ color: 'var(--accent)' }}>Anh</span>
-      </h1>
+          <h1 className="fade-up delay-1" style={{
+            fontFamily: 'var(--font-head)', fontWeight: 800,
+            fontSize: 'clamp(3rem, 9vw, 7rem)',
+            lineHeight: 1.0, letterSpacing: '-0.04em',
+            margin: '0.5rem 0',
+          }}>
+            Vu Duc<br />
+            <span style={{ color: 'var(--accent)' }}>Anh</span>
+          </h1>
 
-      <div className="fade-up delay-2" style={{
-        fontFamily: 'var(--font-mono)', fontSize: 'clamp(1rem, 2.5vw, 1.4rem)',
-        color: 'var(--muted)', marginBottom: '2.5rem', height: '2rem',
-        display: 'flex', alignItems: 'center', gap: '4px',
-      }}>
-        <span style={{ color: 'var(--accent2)' }}>{'>'}</span>&nbsp;
-        {displayed}
-        <span style={{ animation: 'blink 1s infinite', color: 'var(--accent)' }}>|</span>
-      </div>
+          <div className="fade-up delay-2" style={{
+            fontFamily: 'var(--font-mono)', fontSize: 'clamp(1rem, 2.5vw, 1.4rem)',
+            color: 'var(--muted)', marginBottom: '2.5rem', height: '2rem',
+            display: 'flex', alignItems: 'center', gap: '4px',
+          }}>
+            <span style={{ color: 'var(--accent2)' }}>{'>'}</span>&nbsp;
+            {displayed}
+            <span style={{ animation: 'blink 1s infinite', color: 'var(--accent)' }}>|</span>
+          </div>
 
-      <p className="fade-up delay-3" style={{
-        maxWidth: '520px', color: '#888', lineHeight: 1.8,
-        fontSize: '1rem', marginBottom: '3rem',
-      }}>
-        I build high-performance AI applications.
-        Passionate about clean code, clean data, and everything that lies at the
-        intersection of design and engineering.
-      </p>
+          <p className="fade-up delay-3" style={{
+            maxWidth: '520px', color: '#888', lineHeight: 1.8,
+            fontSize: '1rem', marginBottom: '3rem',
+          }}>
+            I build high-performance AI applications.
+            Passionate about clean code, clean data, and everything that lies at the
+            intersection of design and engineering.
+          </p>
 
-      <div className="fade-up delay-4" style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
-        <a href="#projects" style={{
-          background: 'var(--accent)', color: '#000',
-          padding: '0.8rem 2rem', borderRadius: '4px',
-          fontWeight: 700, textDecoration: 'none', fontSize: '0.9rem',
-          letterSpacing: '0.05em', transition: 'transform 0.15s, box-shadow 0.15s',
-        }}
-        onMouseEnter={e => { e.target.style.transform = 'translateY(-2px)'; e.target.style.boxShadow = '0 8px 24px rgba(200,241,53,0.3)' }}
-        onMouseLeave={e => { e.target.style.transform = ''; e.target.style.boxShadow = '' }}
-        >
-          View Projects →
-        </a>
-        <a href="#contact" style={{
-          border: '1px solid var(--border)', color: 'var(--text)',
-          padding: '0.8rem 2rem', borderRadius: '4px',
-          fontWeight: 600, textDecoration: 'none', fontSize: '0.9rem',
-          letterSpacing: '0.05em', transition: 'border-color 0.2s, color 0.2s',
-        }}
-        onMouseEnter={e => { e.target.style.borderColor = 'var(--accent)'; e.target.style.color = 'var(--accent)' }}
-        onMouseLeave={e => { e.target.style.borderColor = 'var(--border)'; e.target.style.color = 'var(--text)' }}
-        >
-          Contact Me
-        </a>
+          <div className="fade-up delay-4" style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
+            <a href="#projects" style={{
+              background: 'var(--accent)', color: '#000',
+              padding: '0.8rem 2rem', borderRadius: '4px',
+              fontWeight: 700, textDecoration: 'none', fontSize: '0.9rem',
+              letterSpacing: '0.05em', transition: 'transform 0.15s, box-shadow 0.15s',
+            }}
+            onMouseEnter={e => { e.target.style.transform = 'translateY(-2px)'; e.target.style.boxShadow = '0 8px 24px rgba(200,241,53,0.3)' }}
+            onMouseLeave={e => { e.target.style.transform = ''; e.target.style.boxShadow = '' }}
+            >
+              View Projects →
+            </a>
+            <a href="#contact" style={{
+              border: '1px solid var(--border)', color: 'var(--text)',
+              padding: '0.8rem 2rem', borderRadius: '4px',
+              fontWeight: 600, textDecoration: 'none', fontSize: '0.9rem',
+              letterSpacing: '0.05em', transition: 'border-color 0.2s, color 0.2s',
+            }}
+            onMouseEnter={e => { e.target.style.borderColor = 'var(--accent)'; e.target.style.color = 'var(--accent)' }}
+            onMouseLeave={e => { e.target.style.borderColor = 'var(--border)'; e.target.style.color = 'var(--text)' }}
+            >
+              Contact Me
+            </a>
+          </div>
+        </div>
+
+        <div className="fade-up delay-4" style={{ flex: '1 1 400px', display: 'flex', justifyContent: 'center', zIndex: 1 }}>
+          <div style={{
+            position: 'relative', width: '100%', maxWidth: '450px',
+            aspectRatio: '1/1', borderRadius: '24px', overflow: 'hidden',
+            boxShadow: '0 20px 40px rgba(0,0,0,0.5)',
+            border: '1px solid var(--border)',
+          }}>
+            <div style={{
+              position: 'absolute', inset: 0,
+              background: 'linear-gradient(45deg, var(--accent) 0%, transparent 100%)',
+              opacity: 0.1, zIndex: 1, pointerEvents: 'none',
+            }} />
+            <img src="/hero_ai.png" alt="AI Visualization" style={{
+              width: '100%', height: '100%', objectFit: 'cover',
+              filter: 'brightness(0.9) contrast(1.1)',
+              transition: 'transform 0.5s ease',
+            }}
+            onMouseEnter={e => e.target.style.transform = 'scale(1.05)'}
+            onMouseLeave={e => e.target.style.transform = 'scale(1)'}
+            />
+          </div>
+        </div>
       </div>
 
       {/* Scroll indicator */}
