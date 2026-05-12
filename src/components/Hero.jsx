@@ -129,12 +129,10 @@ export default function Hero() {
             }} />
             <img src="/ai_brain.png" alt="AI Brain Visualization" style={{
               width: '100%', height: '100%', objectFit: 'contain',
-              mixBlendMode: 'screen',
-              filter: 'contrast(1.1) brightness(1.2)',
-              transition: 'transform 0.5s ease, filter 0.3s ease',
+              transition: 'transform 0.5s ease',
             }}
-            onMouseEnter={e => { e.target.style.transform = 'scale(1.05)'; e.target.style.filter = 'contrast(1.2) brightness(1.3)' }}
-            onMouseLeave={e => { e.target.style.transform = 'scale(1)'; e.target.style.filter = 'contrast(1.1) brightness(1.2)' }}
+            onMouseEnter={e => { e.target.style.transform = 'scale(1.05)' }}
+            onMouseLeave={e => { e.target.style.transform = 'scale(1)' }}
             />
           </div>
         </div>
