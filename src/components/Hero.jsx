@@ -127,7 +127,7 @@ export default function Hero() {
               background: 'radial-gradient(circle, var(--accent) 0%, transparent 60%)',
               opacity: 0.15, filter: 'blur(40px)', zIndex: -1, pointerEvents: 'none',
             }} />
-            <img src="/ai_brain_wireframe.png" alt="AI Brain Visualization" style={{
+            <img src="/ai_brain_wireframe_accent.png" alt="AI Brain Visualization" style={{
               width: '100%', height: '100%', objectFit: 'contain',
               transition: 'transform 0.5s ease',
             }}

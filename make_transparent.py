@@ -18,8 +18,8 @@ def make_transparent(input_path, output_path):
         
         # We want the blue lines. We can just keep the original color but change alpha based on luminance
         # This makes black (luminance 0) fully transparent, and bright lines opaque
-        # To avoid dark fringes, we can set all pixels to a uniform bright cyan, and only vary alpha.
-        cyan_r, cyan_g, cyan_b = 59, 130, 246 # Tailwind blue-500
+        # Give it a nice neon yellow-green accent color (#c8f135)
+        accent_r, accent_g, accent_b = 200, 241, 53
         
         # Map luminance to alpha (0-255)
         # If luminance is high, alpha is high.
@@ -33,8 +33,8 @@ def make_transparent(input_path, output_path):
         # Clamp alpha
         alpha = max(0, min(255, alpha))
         
-        # Give it a nice cyan color
-        newData.append((cyan_r, cyan_g, cyan_b, alpha))
+        # Give it the accent color
+        newData.append((accent_r, accent_g, accent_b, alpha))
         
     img.putdata(newData)
     img.save(output_path, "PNG")
