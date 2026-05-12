@@ -1,7 +1,7 @@
 const stats = [
-  { value: '3+',   label: 'Years of Experience' },
-  { value: '20+',  label: 'Projects Completed' },
-  { value: '10+',  label: 'Happy Clients' },
+  { value: '0',   label: 'Years of Experience' },
+  { value: '10+',  label: 'Projects Completed' },
+  { value: '10+',  label: 'Leetcode' },
   { value: '∞',    label: 'Cups of Coffee' },
 ]
 
@@ -29,13 +29,13 @@ export default function About() {
 
           <p style={{ color: '#888', lineHeight: 1.9, marginBottom: '1rem' }}>
             Hello! I'm a developer passionate about building modern and meaningful
-            web experiences. I love working at the intersection of design and
-            engineering — where clean code meets great UX.
+            AI applications. I love working at the intersection of design and
+            engineering — where clean data meets great algorithms.
           </p>
           <p style={{ color: '#888', lineHeight: 1.9 }}>
-            Currently, I focus on React, TypeScript, and building scalable
-            frontend systems. When I'm not coding, I'm usually reading books or
-            exploring new coffee shops around the city.
+            Currently, I focus on drinking coffee, and reading new
+            AI trends. When I'm not coding, I'm usually hangout with my friends or
+            do some exercice.
           </p>
 
           <a href="/resume.pdf" target="_blank" style={{
