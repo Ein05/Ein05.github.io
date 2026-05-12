@@ -1,12 +1,12 @@
 // ✏️ Sửa skills của bạn ở đây
 const skillGroups = [
   {
-    category: 'Frontend',
-    skills: ['React', 'TypeScript', 'Vite', 'Tailwind CSS', 'Next.js', 'HTML/CSS'],
+    category: 'Web stack',
+    skills: ['React', 'TypeScript', 'Vite', 'HTML/CSS', 'Node.js', 'REST API', 'PostgreSQL', 'Redis'],
   },
   {
-    category: 'Backend',
-    skills: ['Node.js', 'Express', 'REST API', 'GraphQL', 'PostgreSQL', 'MongoDB'],
+    category: 'Python library/framework',
+    skills: ['Numpy', 'Pandas', 'Matplotlib', 'FastAPI', 'Airflow'],
   },
   {
     category: 'Tools & Others',
