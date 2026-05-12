@@ -82,8 +82,8 @@ export default function Hero() {
         maxWidth: '520px', color: '#888', lineHeight: 1.8,
         fontSize: '1rem', marginBottom: '3rem',
       }}>
-        I build beautiful and high-performance web applications.
-        Passionate about clean code, great UX, and everything that lies at the
+        I build high-performance AI applications.
+        Passionate about clean code, clean data, and everything that lies at the
         intersection of design and engineering.
       </p>
 
